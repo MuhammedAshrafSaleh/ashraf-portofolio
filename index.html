@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhammed Ashraf — Full-Stack Developer</title>
+  <meta name="description" content="Full-stack developer from Egypt. Web platforms, mobile apps, internal tools." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- No-flash: set theme + dir before first paint -->
+  <script>
+    (function () {
+      var th = localStorage.getItem("ma_theme") || "dark";
+      var lg = localStorage.getItem("ma_lang")  || "en";
+      document.documentElement.setAttribute("data-theme", th);
+      if (lg === "ar") { document.documentElement.lang = "ar"; document.documentElement.dir = "rtl"; }
+    })();
+  </script>
+</head>
+<body data-page="home">
+
+  <!-- ── Navbar ──────────────────────────────────────────────────────────── -->
+  <nav class="navbar" id="js-navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <span class="navbar__brand-dot"></span>
+        <span class="navbar__brand-name">Muhammed Ashraf</span>
+        <span class="navbar__brand-role" data-i18n="hero.role">Full-Stack Developer</span>
+      </a>
+      <div class="navbar__links">
+        <button class="navbar__link" data-action="scroll-to" data-target="work"    data-i18n="nav.work">Work</button>
+        <button class="navbar__link" data-action="scroll-to" data-target="about"   data-i18n="nav.about">About</button>
+        <button class="navbar__link" data-action="scroll-to" data-target="process" data-i18n="nav.process">Process</button>
+        <button class="navbar__link" data-action="scroll-to" data-target="stack"   data-i18n="nav.stack">Stack</button>
+        <button class="navbar__link" data-action="scroll-to" data-target="contact" data-i18n="nav.contact">Contact</button>
+      </div>
+      <div class="navbar__controls">
+        <button class="theme-switcher" data-action="toggle-theme" aria-label="Toggle theme"></button>
+        <button class="lang-switcher" data-action="toggle-lang" aria-label="Toggle language">
+          <span class="lang-switcher__option lang-switcher__option--active" data-lang="en">EN</span>
+          <span class="lang-switcher__sep">/</span>
+          <span class="lang-switcher__option" data-lang="ar">ع</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── Hero ──────────────────────────────────────────────────────────── -->
+    <section class="hero hero--terminal" id="top">
+      <div class="hero__grid page-wrap">
+        <div class="hero__left">
+          <div class="status-chip">
+            <span class="status-chip__pulse">
+              <span class="status-chip__pulse-dot"></span>
+            </span>
+            <span data-i18n="hero.chip">Available for new work</span>
+          </div>
+          <h1 class="hero__name">Muhammed <em>Ashraf</em></h1>
+          <p class="hero__role" data-i18n="hero.role">Full-Stack Developer</p>
+          <p class="hero__pitch" data-i18n="hero.pitch">I help business owners turn operational chaos into clean web and mobile <em>systems</em>. Real problems, real software, <em>shipped</em>.</p>
+          <div class="hero__actions">
+            <button class="btn btn--primary" data-action="scroll-to" data-target="work">
+              <span data-i18n="hero.cta.work">See the work</span>
+              <span data-arrow></span>
+            </button>
+            <button class="btn btn--ghost" data-action="scroll-to" data-target="contact">
+              <span data-i18n="hero.cta.contact">Start a project</span>
+            </button>
+          </div>
+          <dl class="hero__facts">
+            <div class="hero__fact">
+              <dt data-i18n="hero.based.l">Based</dt>
+              <dd data-i18n="hero.based">Cairo, Egypt · Working worldwide</dd>
+            </div>
+            <div class="hero__fact">
+              <dt data-i18n="hero.reach.l">Reach</dt>
+              <dd><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="95f8e0fdf4f8f8f0f1f4e6fde7f4f3e6f4f9f0fdd5f2f8f4fcf9bbf6faf8">[email&#160;protected]</a></dd>
+            </div>
+            <div class="hero__fact">
+              <dt data-i18n="hero.platforms.l">Platforms</dt>
+              <dd>Web · iOS · Android</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero__right">
+          <div class="terminal">
+            <div class="terminal__chrome">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+              <span class="terminal__title">~/muhammed-ashraf — portfolio — zsh</span>
+              <span class="terminal__spacer"></span>
+            </div>
+            <div class="terminal__body" id="js-terminal-body"></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">
+        <span class="scroll-hint__label">scroll</span>
+        <span class="scroll-hint__line"><span class="scroll-hint__dot"></span></span>
+      </div>
+    </section>
+
+    <!-- ── About ─────────────────────────────────────────────────────────── -->
+    <section class="about-section" id="about">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__num">01</span>
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="about.label">About</span>
+          </div>
+        </div>
+        <div class="about-section__grid">
+          <div class="about-section__title-col">
+            <div class="anim-reveal anim-reveal--delay-60">
+              <h2 class="text-display-2" data-i18n="about.h2">I build software for people who <em>don't want to think</em> about software.</h2>
+            </div>
+          </div>
+          <div class="about-section__body-col">
+            <div class="anim-reveal anim-reveal--delay-100">
+              <p class="text-lede" data-i18n="about.p1">I'm Muhammed Ashraf, a full-stack developer from Egypt.</p>
+            </div>
+            <div class="anim-reveal anim-reveal--delay-160">
+              <p class="text-body" data-i18n="about.p2">Most of my work starts with a paper notebook, a WhatsApp group, or a Google Sheet that grew out of control.</p>
+            </div>
+            <div class="anim-reveal anim-reveal--delay-220">
+              <p class="text-body" data-i18n="about.p3">I compete in problem-solving contests for fun — that habit shapes how I approach work.</p>
+            </div>
+            <div class="anim-reveal anim-reveal--delay-280">
+              <div class="about-section__stats">
+                <div class="about-section__stat">
+                  <span class="about-section__stat-num">5+</span>
+                  <span class="about-section__stat-label" data-i18n="about.stat1">Systems shipped</span>
+                </div>
+                <div class="about-section__stat">
+                  <span class="about-section__stat-num">3</span>
+                  <span class="about-section__stat-label" data-i18n="about.stat2">Industries</span>
+                </div>
+                <div class="about-section__stat">
+                  <span class="about-section__stat-num">2</span>
+                  <span class="about-section__stat-label" data-i18n="about.stat3">Languages (AR / EN)</span>
+                </div>
+                <div class="about-section__stat">
+                  <span class="about-section__stat-num">∞</span>
+                  <span class="about-section__stat-label" data-i18n="about.stat4">Problems worth solving</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Work ──────────────────────────────────────────────────────────── -->
+    <section class="work-section" id="work">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__num">02</span>
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="work.label">Selected Work</span>
+          </div>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-60">
+          <h2 class="text-display-2 work-section__title" data-i18n="work.h2">Five problems, five systems.</h2>
+        </div>
+        <div class="work-section__list">
+
+          <!-- Card: CHR Developments -->
+          <div class="anim-reveal anim-reveal--delay-80">
+            <article class="project-card">
+              <div class="project-card__index">01</div>
+              <div class="project-card__cover">
+                <div class="proj-cover proj-cover--web proj-cover--chr">
+                  <div class="proj-cover__bg"></div>
+                  <div class="proj-cover__grid"></div>
+                  <div class="proj-cover__browser-wrap">
+                    <div class="browser-frame browser-frame--mini">
+                      <div class="browser-frame__bar">
+                        <div class="browser-frame__dots">
+                          <span class="browser-frame__dot"></span>
+                          <span class="browser-frame__dot"></span>
+                          <span class="browser-frame__dot"></span>
+                        </div>
+                      </div>
+                      <div class="browser-frame__viewport">
+                        <img src="assets/chr/hero.png" alt="CHR Developments screenshot" loading="lazy" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proj-cover__corner">
+                    <span class="proj-cover__type-label">Web</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__meta">
+                <div class="project-card__header">
+                  <span class="project-card__category" data-i18n="chr.category">Real Estate Platform</span>
+                  <span class="project-card__year">2024</span>
+                </div>
+                <h3 class="project-card__title" data-i18n="chr.name">CHR Developments</h3>
+                <p class="project-card__tagline" data-i18n="chr.tagline">A digital showroom for a real estate developer.</p>
+                <div class="project-card__chips">
+                  <span class="tech-chip">Next.js</span>
+                  <span class="tech-chip">TypeScript</span>
+                  <span class="tech-chip">Tailwind</span>
+                  <span class="tech-chip">Prisma</span>
+                  <span class="tech-chip tech-chip--more">+2</span>
+                </div>
+                <a href="project-web.html" class="project-card__cta">
+                  <span data-i18n="work.view">View case study</span>
+                  <span data-arrow></span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card: debitPro -->
+          <div class="anim-reveal anim-reveal--delay-140">
+            <article class="project-card">
+              <div class="project-card__index">02</div>
+              <div class="project-card__cover">
+                <div class="proj-cover proj-cover--shots proj-cover--debitpro">
+                  <div class="proj-cover__bg"></div>
+                  <div class="proj-cover__grid"></div>
+                  <div class="proj-cover__phone-wrap">
+                    <div class="phone-frame phone-frame--card">
+                      <div class="phone-frame__bezel">
+                        <div class="phone-frame__notch"></div>
+                        <div class="phone-frame__screen">
+                          <img src="assets/debitpro/dashboard.png" alt="debitPro dashboard" class="phone-frame__shot" loading="lazy" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proj-cover__corner">
+                    <span class="proj-cover__type-label">Mobile</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__meta">
+                <div class="project-card__header">
+                  <span class="project-card__category" data-i18n="dp.category">FinOps · Mobile</span>
+                  <span class="project-card__year">2025</span>
+                </div>
+                <h3 class="project-card__title" data-i18n="dp.name">debitPro</h3>
+                <p class="project-card__tagline" data-i18n="dp.tagline">An installment-office app without the notebook.</p>
+                <div class="project-card__chips">
+                  <span class="tech-chip">React Native</span>
+                  <span class="tech-chip">Expo</span>
+                  <span class="tech-chip">Supabase</span>
+                  <span class="tech-chip">PostgreSQL</span>
+                </div>
+                <a href="project-mobile.html" class="project-card__cta">
+                  <span data-i18n="work.view">View case study</span>
+                  <span data-arrow></span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Process ───────────────────────────────────────────────────────── -->
+    <section class="process-section" id="process">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__num">03</span>
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="process.label">Process</span>
+          </div>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-60">
+          <h2 class="text-display-2" data-i18n="process.h2">How a project moves from problem to solution.</h2>
+        </div>
+        <div class="process-section__list">
+          <div class="anim-reveal anim-reveal--delay-100">
+            <div class="process-section__row">
+              <div class="process-section__num">01</div>
+              <div class="process-section__content">
+                <h3 class="process-section__step-title" data-i18n="process.01.title">Discovery</h3>
+                <p class="process-section__step-body" data-i18n="process.01.body">I sit with you and watch how the work actually happens today.</p>
+              </div>
+            </div>
+          </div>
+          <div class="anim-reveal anim-reveal--delay-160">
+            <div class="process-section__row">
+              <div class="process-section__num">02</div>
+              <div class="process-section__content">
+                <h3 class="process-section__step-title" data-i18n="process.02.title">Shape</h3>
+                <p class="process-section__step-body" data-i18n="process.02.body">I write the problem back to you in plain language, then sketch the smallest system.</p>
+              </div>
+            </div>
+          </div>
+          <div class="anim-reveal anim-reveal--delay-220">
+            <div class="process-section__row">
+              <div class="process-section__num">03</div>
+              <div class="process-section__content">
+                <h3 class="process-section__step-title" data-i18n="process.03.title">Build</h3>
+                <p class="process-section__step-body" data-i18n="process.03.body">I ship in tight loops. You see something working every week.</p>
+              </div>
+            </div>
+          </div>
+          <div class="anim-reveal anim-reveal--delay-280">
+            <div class="process-section__row">
+              <div class="process-section__num">04</div>
+              <div class="process-section__content">
+                <h3 class="process-section__step-title" data-i18n="process.04.title">Deliver</h3>
+                <p class="process-section__step-body" data-i18n="process.04.body">Deploy, document, train your team, and stay on call.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Stack ─────────────────────────────────────────────────────────── -->
+    <section class="stack-section" id="stack">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__num">04</span>
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="stack.label">Stack</span>
+          </div>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-60">
+          <h2 class="text-display-2" data-i18n="stack.h2">Tools I reach for.</h2>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-100">
+          <p class="text-section-sub" data-i18n="stack.subtitle">I'm tool-agnostic — but these are what I'm fastest and sharpest with.</p>
+        </div>
+        <div class="stack-section__grid">
+          <div class="anim-reveal stack-section__group anim-reveal--delay-140">
+            <h3 class="stack-section__group-label" data-i18n="stack.frontend">Frontend</h3>
+            <ul class="stack-section__items">
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Next.js</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>React</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>React Native</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>TypeScript</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Tailwind CSS</li>
+            </ul>
+          </div>
+          <div class="anim-reveal stack-section__group anim-reveal--delay-200">
+            <h3 class="stack-section__group-label" data-i18n="stack.backend">Backend</h3>
+            <ul class="stack-section__items">
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Node.js</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Express</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Nest.js</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Laravel</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>REST / GraphQL</li>
+            </ul>
+          </div>
+          <div class="anim-reveal stack-section__group anim-reveal--delay-260">
+            <h3 class="stack-section__group-label" data-i18n="stack.data">Data &amp; Infra</h3>
+            <ul class="stack-section__items">
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>PostgreSQL</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>MySQL</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>MongoDB</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Supabase</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Prisma</li>
+            </ul>
+          </div>
+          <div class="anim-reveal stack-section__group anim-reveal--delay-320">
+            <h3 class="stack-section__group-label" data-i18n="stack.int">Integrations</h3>
+            <ul class="stack-section__items">
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Stripe</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Google APIs</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Mapbox</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Cloudinary</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Resend</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Testimonials ───────────────────────────────────────────────────── -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__num">05</span>
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="testi.label">Words</span>
+          </div>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-60">
+          <h2 class="text-display-2 testimonials-section__title" data-i18n="testi.h2">What clients say.</h2>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-120">
+          <div class="testimonials-section__grid">
+            <div class="testimonial-card">
+              <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
+              <p class="testimonial-card__quote" data-i18n="testi.q1">Muhammed didn't just deliver an app — he understood our business better than some of our own staff.</p>
+              <div class="testimonial-card__person">
+                <span class="testimonial-card__name">Ahmed M.</span>
+                <span class="testimonial-card__role" data-i18n="testi.q1.role">Owner, Finishing Works Co.</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
+              <p class="testimonial-card__quote" data-i18n="testi.q2">He pushed back when we asked for the wrong thing, and pushed harder when we asked for the right thing. That's rare.</p>
+              <div class="testimonial-card__person">
+                <span class="testimonial-card__name">Sara F.</span>
+                <span class="testimonial-card__role" data-i18n="testi.q2.role">Product Lead, EdTech</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
+              <p class="testimonial-card__quote" data-i18n="testi.q3">Our installment office runs on his app now. Three months in, zero late payments missed.</p>
+              <div class="testimonial-card__person">
+                <span class="testimonial-card__name">Khaled R.</span>
+                <span class="testimonial-card__role" data-i18n="testi.q3.role">Installment Office</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Contact ───────────────────────────────────────────────────────── -->
+    <section class="contact-section" id="contact">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__num">06</span>
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="contact.label">Contact</span>
+          </div>
+        </div>
+        <div class="contact-section__grid">
+          <div class="anim-reveal anim-reveal--delay-60">
+            <h2 class="contact-section__title" data-i18n="contact.h1">Got a <em>problem</em><br>worth solving?</h2>
+          </div>
+          <div class="anim-reveal anim-reveal--delay-120">
+            <div class="contact-section__right">
+              <p class="contact-section__body" data-i18n="contact.body">Tell me about it. Whether it's a half-built idea, a Google Sheet that grew teeth, or a real product — I'll reply within 24 hours.</p>
+              <div class="contact-section__actions">
+                <a href="/cdn-cgi/l/email-protection#ddb0a8b5bcb0b0b8b9bcaeb5afbcbbaebcb1b8b59dbab0bcb4b1f3beb2b0" class="btn btn--primary btn--lg">
+                  <span data-i18n="contact.email.btn">Email me</span>
+                  <span data-arrow></span>
+                </a>
+                <a href="https://www.linkedin.com/in/muhammedashrafsaleh/" target="_blank" rel="noreferrer" class="btn btn--ghost btn--lg">
+                  <span data-i18n="contact.linkedin.btn">LinkedIn</span>
+                </a>
+              </div>
+              <button class="contact-section__email-copy" data-action="copy-email">
+                <span class="contact-section__email-label" data-i18n="contact.copy.label">Or copy email</span>
+                <span class="contact-section__email-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="365b435e575b5b535257455e44575045575a535e76515b575f5a1855595b">[email&#160;protected]</a></span>
+                <span class="contact-section__copy-feedback"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="page-wrap site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="navbar__brand-dot"></span>
+        <span>Muhammed Ashraf</span>
+      </div>
+      <div class="site-footer__links">
+        <a href="/cdn-cgi/l/email-protection#127f677a737f7f777673617a60737461737e777a52757f737b7e3c717d7f">Email</a>
+        <a href="https://www.linkedin.com/in/muhammedashrafsaleh/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+      <div class="site-footer__copy" data-i18n="footer.copy">Designed &amp; built by Muhammed Ashraf · 2026</div>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="main.js"></script>
+</body>
+</html>

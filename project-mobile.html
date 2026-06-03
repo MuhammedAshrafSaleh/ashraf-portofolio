@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>debitPro — Muhammed Ashraf</title>
+  <meta name="description" content="Case study: debitPro — Installment office mobile app built by Muhammed Ashraf." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script>
+    (function () {
+      var th = localStorage.getItem("ma_theme") || "dark";
+      var lg = localStorage.getItem("ma_lang")  || "en";
+      document.documentElement.setAttribute("data-theme", th);
+      if (lg === "ar") { document.documentElement.lang = "ar"; document.documentElement.dir = "rtl"; }
+    })();
+  </script>
+</head>
+<body data-page="project-mobile">
+
+  <!-- ── Navbar ──────────────────────────────────────────────────────────── -->
+  <nav class="navbar" id="js-navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <span class="navbar__brand-dot"></span>
+        <span class="navbar__brand-name">Muhammed Ashraf</span>
+        <span class="navbar__brand-role" data-i18n="hero.role">Full-Stack Developer</span>
+      </a>
+      <div class="navbar__links">
+        <a href="index.html#work"    class="navbar__link" data-i18n="nav.work">Work</a>
+        <a href="index.html#about"   class="navbar__link" data-i18n="nav.about">About</a>
+        <a href="index.html#process" class="navbar__link" data-i18n="nav.process">Process</a>
+        <a href="index.html#stack"   class="navbar__link" data-i18n="nav.stack">Stack</a>
+        <a href="index.html#contact" class="navbar__link" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="navbar__controls">
+        <button class="theme-switcher" data-action="toggle-theme" aria-label="Toggle theme"></button>
+        <button class="lang-switcher" data-action="toggle-lang" aria-label="Toggle language">
+          <span class="lang-switcher__option lang-switcher__option--active" data-lang="en">EN</span>
+          <span class="lang-switcher__sep">/</span>
+          <span class="lang-switcher__option" data-lang="ar">ع</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="project-page">
+
+    <!-- ── Project hero ──────────────────────────────────────────────────── -->
+    <header class="pp-hero">
+      <div class="page-wrap">
+        <a href="index.html" class="pp-hero__back">
+          <span data-back-arrow></span>
+          <span data-i18n="pp.back">Back to all work</span>
+        </a>
+
+        <div class="anim-reveal">
+          <div class="pp-hero__meta">
+            <span class="pp-hero__category" data-i18n="dp.pp.cat">FinOps · Mobile</span>
+            <span class="pp-hero__sep">·</span>
+            <span>2025</span>
+            <span class="pp-hero__sep">·</span>
+            <span>Mobile</span>
+            <span class="pp-hero__sep">·</span>
+            <span class="pp-hero__status" data-i18n="dp.pp.status">In progress</span>
+          </div>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-60">
+          <h1 class="pp-hero__title" data-i18n="dp.pp.name">debitPro</h1>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-120">
+          <p class="pp-hero__tagline" data-i18n="dp.pp.tagline">An installment-office app: clients, installment plans, monthly collections, and reminders — without the notebook.</p>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-180">
+          <div class="pp-hero__actions">
+            <a href="#" class="btn btn--primary" target="_blank" rel="noreferrer">
+              <span data-i18n="pp.live">Live demo</span>
+              <span data-arrow></span>
+            </a>
+            <a href="#" class="btn btn--ghost" target="_blank" rel="noreferrer">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 014 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              <span data-i18n="pp.source">Source</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Three-phone showcase -->
+        <div class="anim-reveal pp-hero__visual anim-reveal--delay-240">
+          <div class="pp-hero__cover">
+            <div class="proj-showcase proj-showcase--debitpro">
+              <div class="proj-showcase__bg"></div>
+              <div class="proj-showcase__grid"></div>
+              <div class="proj-showcase__brand">
+                <img src="assets/debitpro/logo.png" alt="debitPro logo" class="proj-showcase__logo" />
+              </div>
+              <div class="proj-showcase__phones">
+                <div class="proj-showcase__phone proj-showcase__phone--left">
+                  <div class="phone-frame">
+                    <div class="phone-frame__bezel">
+                      <div class="phone-frame__notch"></div>
+                      <div class="phone-frame__screen">
+                        <img src="assets/debitpro/p3-1-customers-list.png" alt="" class="phone-frame__shot" loading="lazy" />
+                      </div>
+                      <div class="phone-frame__side phone-frame__side--left">
+                        <span class="phone-frame__btn phone-frame__btn--mute"></span>
+                        <span class="phone-frame__btn phone-frame__btn--vol-up"></span>
+                        <span class="phone-frame__btn phone-frame__btn--vol-dn"></span>
+                      </div>
+                      <div class="phone-frame__side phone-frame__side--right">
+                        <span class="phone-frame__btn phone-frame__btn--power"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="proj-showcase__phone proj-showcase__phone--center">
+                  <div class="phone-frame">
+                    <div class="phone-frame__bezel">
+                      <div class="phone-frame__notch"></div>
+                      <div class="phone-frame__screen">
+                        <img src="assets/debitpro/dashboard.png" alt="" class="phone-frame__shot" loading="lazy" />
+                      </div>
+                      <div class="phone-frame__side phone-frame__side--left">
+                        <span class="phone-frame__btn phone-frame__btn--mute"></span>
+                        <span class="phone-frame__btn phone-frame__btn--vol-up"></span>
+                        <span class="phone-frame__btn phone-frame__btn--vol-dn"></span>
+                      </div>
+                      <div class="phone-frame__side phone-frame__side--right">
+                        <span class="phone-frame__btn phone-frame__btn--power"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="proj-showcase__phone proj-showcase__phone--right">
+                  <div class="phone-frame">
+                    <div class="phone-frame__bezel">
+                      <div class="phone-frame__notch"></div>
+                      <div class="phone-frame__screen">
+                        <img src="assets/debitpro/p4-4-track-installments.png" alt="" class="phone-frame__shot" loading="lazy" />
+                      </div>
+                      <div class="phone-frame__side phone-frame__side--left">
+                        <span class="phone-frame__btn phone-frame__btn--mute"></span>
+                        <span class="phone-frame__btn phone-frame__btn--vol-up"></span>
+                        <span class="phone-frame__btn phone-frame__btn--vol-dn"></span>
+                      </div>
+                      <div class="phone-frame__side phone-frame__side--right">
+                        <span class="phone-frame__btn phone-frame__btn--power"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="proj-showcase__tag">
+                <span class="proj-showcase__tag-dot"></span>
+                <span>Mobile</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ── Gallery / Phases ───────────────────────────────────────────────── -->
+    <section class="pp-section">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="pp.gallery">Gallery</span>
+          </div>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-60">
+          <p class="pp-section__intro" data-i18n="pp.gallery.sub">Every screen in the app, organized by build phase.</p>
+        </div>
+
+        <div class="phases-gallery phases-gallery--debitpro">
+
+          <!-- Phase 01 -->
+          <div class="anim-reveal phase">
+            <div class="phase__head">
+              <div class="phase__num">01</div>
+              <div class="phase__head-content">
+                <h3 class="phase__title" data-i18n="dp.ph01.title">Authentication</h3>
+                <p class="phase__body" data-i18n="dp.ph01.body">Sign-up, login, password recovery, and confirmation flow.</p>
+              </div>
+            </div>
+            <div class="phase__screens">
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p1-1-signup.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">01.01</span>
+                  <span class="phase__caption-text" data-i18n="dp.p1.1">Create account</span>
+                </div>
+              </div>
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p1-2-login.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">01.02</span>
+                  <span class="phase__caption-text" data-i18n="dp.p1.2">Login</span>
+                </div>
+              </div>
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p1-3-forgot.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">01.03</span>
+                  <span class="phase__caption-text" data-i18n="dp.p1.3">Forgot password</span>
+                </div>
+              </div>
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p1-4-sent.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">01.04</span>
+                  <span class="phase__caption-text" data-i18n="dp.p1.4">Recovery link sent</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 02 -->
+          <div class="anim-reveal phase">
+            <div class="phase__head">
+              <div class="phase__num">02</div>
+              <div class="phase__head-content">
+                <h3 class="phase__title" data-i18n="dp.ph02.title">Account &amp; Settings</h3>
+                <p class="phase__body" data-i18n="dp.ph02.body">Preferences, language, dark mode, profile editing and password change in one place.</p>
+              </div>
+            </div>
+            <div class="phase__screens">
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p2-1-settings.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">02.01</span>
+                  <span class="phase__caption-text" data-i18n="dp.p2.1">Settings</span>
+                </div>
+              </div>
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p2-2-edit-account.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">02.02</span>
+                  <span class="phase__caption-text" data-i18n="dp.p2.2">Edit profile</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 03 -->
+          <div class="anim-reveal phase">
+            <div class="phase__head">
+              <div class="phase__num">03</div>
+              <div class="phase__head-content">
+                <h3 class="phase__title" data-i18n="dp.ph03.title">Clients</h3>
+                <p class="phase__body" data-i18n="dp.ph03.body">Searchable client directory, fast new-client entry, and a single profile that summarizes every plan and balance.</p>
+              </div>
+            </div>
+            <div class="phase__screens">
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p3-1-customers-list.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">03.01</span>
+                  <span class="phase__caption-text" data-i18n="dp.p3.1">Clients list</span>
+                </div>
+              </div>
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p3-2-add-customer.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">03.02</span>
+                  <span class="phase__caption-text" data-i18n="dp.p3.2">Add client</span>
+                </div>
+              </div>
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p3-3-customer-details.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">03.03</span>
+                  <span class="phase__caption-text" data-i18n="dp.p3.3">Client profile</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 04 -->
+          <div class="anim-reveal phase">
+            <div class="phase__head">
+              <div class="phase__num">04</div>
+              <div class="phase__head-content">
+                <h3 class="phase__title" data-i18n="dp.ph04.title">Installments</h3>
+                <p class="phase__body" data-i18n="dp.ph04.body">Add records, schedule monthly installments, collect payments, and track every plan in real time.</p>
+              </div>
+            </div>
+            <div class="phase__screens">
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p4-1-add-record.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">04.01</span>
+                  <span class="phase__caption-text" data-i18n="dp.p4.1">Add record</span>
+                </div>
+              </div>
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p4-2-add-installment.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">04.02</span>
+                  <span class="phase__caption-text" data-i18n="dp.p4.2">Add monthly installment</span>
+                </div>
+              </div>
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p4-3-pay-installment.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">04.03</span>
+                  <span class="phase__caption-text" data-i18n="dp.p4.3">Collect payment</span>
+                </div>
+              </div>
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p4-4-track-installments.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">04.04</span>
+                  <span class="phase__caption-text" data-i18n="dp.p4.4">Track installments</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 05 -->
+          <div class="anim-reveal phase">
+            <div class="phase__head">
+              <div class="phase__num">05</div>
+              <div class="phase__head-content">
+                <h3 class="phase__title" data-i18n="dp.ph05.title">Loans (مُهَل)</h3>
+                <p class="phase__body" data-i18n="dp.ph05.body">One-time loans / grace payments managed alongside recurring installments.</p>
+              </div>
+            </div>
+            <div class="phase__screens">
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p5-1-add-grace.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">05.01</span>
+                  <span class="phase__caption-text" data-i18n="dp.p5.1">Add grace loan</span>
+                </div>
+              </div>
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p5-2-customer-graces.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">05.02</span>
+                  <span class="phase__caption-text" data-i18n="dp.p5.2">Client's grace loans</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 06 -->
+          <div class="anim-reveal phase">
+            <div class="phase__head">
+              <div class="phase__num">06</div>
+              <div class="phase__head-content">
+                <h3 class="phase__title" data-i18n="dp.ph06.title">Filters &amp; Views</h3>
+                <p class="phase__body" data-i18n="dp.ph06.body">Powerful filters across status, client class, date range, and category.</p>
+              </div>
+            </div>
+            <div class="phase__screens">
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p6-1-filters.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">06.01</span>
+                  <span class="phase__caption-text" data-i18n="dp.p6.1">All accounts</span>
+                </div>
+              </div>
+              <div class="phase__screen-cell">
+                <div class="phone-frame">
+                  <div class="phone-frame__bezel"><div class="phone-frame__notch"></div>
+                    <div class="phone-frame__screen"><img src="assets/debitpro/p6-2-filters-2.png" alt="" class="phone-frame__shot" loading="lazy" /></div>
+                  </div>
+                </div>
+                <div class="phase__caption">
+                  <span class="phase__caption-num">06.02</span>
+                  <span class="phase__caption-text" data-i18n="dp.p6.2">Grace loans view</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Problem / Solution ─────────────────────────────────────────────── -->
+    <section class="pp-section pp-section--alt">
+      <div class="page-wrap">
+        <div class="pp-overview">
+          <div class="anim-reveal pp-overview__col">
+            <div class="section-label">
+              <span class="section-label__line"></span>
+              <span class="section-label__text" data-i18n="pp.problem">The problem</span>
+            </div>
+            <p class="pp-overview__body" data-i18n="dp.problem">An installment office was running on paper notebooks and WhatsApp reminders.</p>
+          </div>
+          <div class="anim-reveal pp-overview__col pp-overview__col--solution anim-reveal--delay-80">
+            <div class="section-label">
+              <span class="section-label__line"></span>
+              <span class="section-label__text" data-i18n="pp.solution">The solution</span>
+            </div>
+            <p class="pp-overview__body" data-i18n="dp.solution">A clean mobile app: clients, plans, automated monthly schedules, payment logging, overdue alerts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Tech stack ─────────────────────────────────────────────────────── -->
+    <section class="pp-section">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="pp.stack">Tech stack</span>
+          </div>
+        </div>
+        <div class="anim-reveal pp-tech-stack anim-reveal--delay-60">
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>React Native</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Expo</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Supabase</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>PostgreSQL</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Expo Notifications</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Features ───────────────────────────────────────────────────────── -->
+    <section class="pp-section pp-section--alt">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="pp.features">Key features</span>
+          </div>
+        </div>
+        <div class="pp-features">
+          <div class="anim-reveal pp-feature anim-reveal--delay-60">
+            <div class="pp-feature__num">01</div>
+            <div class="pp-feature__body"><p data-i18n="dp.f1">Client profiles + installment plans</p></div>
+          </div>
+          <div class="anim-reveal pp-feature anim-reveal--delay-100">
+            <div class="pp-feature__num">02</div>
+            <div class="pp-feature__body"><p data-i18n="dp.f2">Automated monthly schedule generation</p></div>
+          </div>
+          <div class="anim-reveal pp-feature anim-reveal--delay-140">
+            <div class="pp-feature__num">03</div>
+            <div class="pp-feature__body"><p data-i18n="dp.f3">Overdue &amp; upcoming payment alerts</p></div>
+          </div>
+          <div class="anim-reveal pp-feature anim-reveal--delay-180">
+            <div class="pp-feature__num">04</div>
+            <div class="pp-feature__body"><p data-i18n="dp.f4">Receipt printing (Bluetooth)</p></div>
+          </div>
+          <div class="anim-reveal pp-feature anim-reveal--delay-220">
+            <div class="pp-feature__num">05</div>
+            <div class="pp-feature__body"><p data-i18n="dp.f5">Owner financial dashboard</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Challenges ─────────────────────────────────────────────────────── -->
+    <section class="pp-section">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="pp.challenges">Challenges I solved</span>
+          </div>
+        </div>
+        <div class="pp-challenges">
+          <div class="anim-reveal pp-challenge anim-reveal--delay-60">
+            <div class="pp-challenge__marker">01</div>
+            <div class="pp-challenge__content">
+              <h3 class="pp-challenge__title" data-i18n="dp.c1.title">Reliable monthly schedules</h3>
+              <p class="pp-challenge__body" data-i18n="dp.c1.body">Edge cases everywhere — early payment, partial payment, plan renegotiation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Next project ───────────────────────────────────────────────────── -->
+    <section class="pp-section pp-section--next">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <a href="project-web.html" class="pp-next">
+            <div class="pp-next__label" data-i18n="pp.next">Next project</div>
+            <div class="pp-next__name">
+              <span data-i18n="dp.next.name">CHR Developments</span>
+              <span data-arrow></span>
+            </div>
+            <div class="pp-next__category" data-i18n="dp.next.cat">Real Estate Platform</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="page-wrap site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="navbar__brand-dot"></span>
+        <span>Muhammed Ashraf</span>
+      </div>
+      <div class="site-footer__links">
+        <a href="/cdn-cgi/l/email-protection#ee839b868f83838b8a8f9d869c8f889d8f828b86ae89838f8782c08d8183">Email</a>
+        <a href="https://www.linkedin.com/in/muhammedashrafsaleh/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+      <div class="site-footer__copy" data-i18n="footer.copy">Designed &amp; built by Muhammed Ashraf · 2026</div>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="main.js"></script>
+</body>
+</html>
