@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,12 +16,13 @@
   <script>
     (function () {
       var th = localStorage.getItem("ma_theme") || "dark";
-      var lg = localStorage.getItem("ma_lang")  || "en";
+      var lg = localStorage.getItem("ma_lang") || "en";
       document.documentElement.setAttribute("data-theme", th);
       if (lg === "ar") { document.documentElement.lang = "ar"; document.documentElement.dir = "rtl"; }
     })();
   </script>
 </head>
+
 <body data-page="home">
 
   <!-- ── Navbar ──────────────────────────────────────────────────────────── -->
@@ -32,11 +34,13 @@
         <span class="navbar__brand-role" data-i18n="hero.role">Full-Stack Developer</span>
       </a>
       <div class="navbar__links">
-        <button class="navbar__link" data-action="scroll-to" data-target="work"    data-i18n="nav.work">Work</button>
-        <button class="navbar__link" data-action="scroll-to" data-target="about"   data-i18n="nav.about">About</button>
-        <button class="navbar__link" data-action="scroll-to" data-target="process" data-i18n="nav.process">Process</button>
-        <button class="navbar__link" data-action="scroll-to" data-target="stack"   data-i18n="nav.stack">Stack</button>
-        <button class="navbar__link" data-action="scroll-to" data-target="contact" data-i18n="nav.contact">Contact</button>
+        <button class="navbar__link" data-action="scroll-to" data-target="work" data-i18n="nav.work">Work</button>
+        <button class="navbar__link" data-action="scroll-to" data-target="about" data-i18n="nav.about">About</button>
+        <button class="navbar__link" data-action="scroll-to" data-target="process"
+          data-i18n="nav.process">Process</button>
+        <button class="navbar__link" data-action="scroll-to" data-target="stack" data-i18n="nav.stack">Stack</button>
+        <button class="navbar__link" data-action="scroll-to" data-target="contact"
+          data-i18n="nav.contact">Contact</button>
       </div>
       <div class="navbar__controls">
         <button class="theme-switcher" data-action="toggle-theme" aria-label="Toggle theme"></button>
@@ -62,7 +66,8 @@
           </div>
           <h1 class="hero__name">Muhammed <em>Ashraf</em></h1>
           <p class="hero__role" data-i18n="hero.role">Full-Stack Developer</p>
-          <p class="hero__pitch" data-i18n="hero.pitch">I help business owners turn operational chaos into clean web and mobile <em>systems</em>. Real problems, real software, <em>shipped</em>.</p>
+          <p class="hero__pitch" data-i18n="hero.pitch">I help business owners turn operational chaos into clean web and
+            mobile <em>systems</em>. Real problems, real software, <em>shipped</em>.</p>
           <div class="hero__actions">
             <button class="btn btn--primary" data-action="scroll-to" data-target="work">
               <span data-i18n="hero.cta.work">See the work</span>
@@ -79,7 +84,8 @@
             </div>
             <div class="hero__fact">
               <dt data-i18n="hero.reach.l">Reach</dt>
-              <dd><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="95f8e0fdf4f8f8f0f1f4e6fde7f4f3e6f4f9f0fdd5f2f8f4fcf9bbf6faf8">[email&#160;protected]</a></dd>
+              <dd><a href="mailto:muhammedashrafsaleh@gmail.com">muhammedashrafsaleh@gmail.com</a>
+              </dd>
             </div>
             <div class="hero__fact">
               <dt data-i18n="hero.platforms.l">Platforms</dt>
@@ -119,7 +125,8 @@
         <div class="about-section__grid">
           <div class="about-section__title-col">
             <div class="anim-reveal anim-reveal--delay-60">
-              <h2 class="text-display-2" data-i18n="about.h2">I build software for people who <em>don't want to think</em> about software.</h2>
+              <h2 class="text-display-2" data-i18n="about.h2">I build software for people who <em>don't want to
+                  think</em> about software.</h2>
             </div>
           </div>
           <div class="about-section__body-col">
@@ -127,10 +134,12 @@
               <p class="text-lede" data-i18n="about.p1">I'm Muhammed Ashraf, a full-stack developer from Egypt.</p>
             </div>
             <div class="anim-reveal anim-reveal--delay-160">
-              <p class="text-body" data-i18n="about.p2">Most of my work starts with a paper notebook, a WhatsApp group, or a Google Sheet that grew out of control.</p>
+              <p class="text-body" data-i18n="about.p2">Most of my work starts with a paper notebook, a WhatsApp group,
+                or a Google Sheet that grew out of control.</p>
             </div>
             <div class="anim-reveal anim-reveal--delay-220">
-              <p class="text-body" data-i18n="about.p3">I compete in problem-solving contests for fun — that habit shapes how I approach work.</p>
+              <p class="text-body" data-i18n="about.p3">I compete in problem-solving contests for fun — that habit
+                shapes how I approach work.</p>
             </div>
             <div class="anim-reveal anim-reveal--delay-280">
               <div class="about-section__stats">
@@ -139,7 +148,7 @@
                   <span class="about-section__stat-label" data-i18n="about.stat1">Systems shipped</span>
                 </div>
                 <div class="about-section__stat">
-                  <span class="about-section__stat-num">3</span>
+                  <span class="about-section__stat-num">5</span>
                   <span class="about-section__stat-label" data-i18n="about.stat2">Industries</span>
                 </div>
                 <div class="about-section__stat">
@@ -172,10 +181,132 @@
         </div>
         <div class="work-section__list">
 
+          <!-- Card: FegmaPlatform LMS -->
+          <div class="anim-reveal anim-reveal--delay-200">
+            <article class="project-card">
+              <div class="project-card__index">01</div>
+              <div class="project-card__cover">
+                <div class="proj-cover proj-cover--web proj-cover--lms">
+                  <div class="proj-cover__bg"></div>
+                  <div class="proj-cover__grid"></div>
+                  <div class="proj-cover__browser-wrap">
+                    <div class="browser-frame browser-frame--mini">
+                      <div class="browser-frame__bar">
+                        <div class="browser-frame__dots">
+                          <span class="browser-frame__dot"></span>
+                          <span class="browser-frame__dot"></span>
+                          <span class="browser-frame__dot"></span>
+                        </div>
+                      </div>
+                      <div class="browser-frame__viewport">
+                        <div class="media-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <circle cx="8.5" cy="8.5" r="1.6" />
+                            <path d="M21 15l-5-5L5 21" />
+                          </svg><span class="media-ph__label">Image soon</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proj-cover__corner">
+                    <span class="proj-cover__type-label">Web</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__meta">
+                <div class="project-card__header">
+                  <span class="project-card__category" data-i18n="lms.category">E-Learning Platform · Web</span>
+                  <span class="project-card__year">June 2026</span>
+                </div>
+                <h3 class="project-card__title" data-i18n="lms.name">FegmaPlatform LMS</h3>
+                <p class="project-card__tagline" data-i18n="lms.tagline">A full learning-management platform for
+                  students, instructors &amp; admins.</p>
+                <div class="project-card__chips">
+                  <span class="tech-chip">Laravel</span>
+                  <span class="tech-chip">MySQL</span>
+                  <span class="tech-chip">Stripe</span>
+                  <span class="tech-chip">DomPDF</span>
+                  <span class="tech-chip tech-chip--more">+2</span>
+                </div>
+                <a href="project-lms.html" class="project-card__cta">
+                  <span data-i18n="work.view">View case study</span>
+                  <span data-arrow></span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card: debitPro -->
+          <div class="anim-reveal anim-reveal--delay-140">
+            <article class="project-card">
+              <div class="project-card__index">02</div>
+              <div class="project-card__cover">
+                <div class="proj-cover proj-cover--shots proj-cover--debitpro">
+                  <div class="proj-cover__bg"></div>
+                  <div class="proj-cover__grid"></div>
+                  <div class="proj-cover__phones">
+                    <div class="proj-cover__phone proj-cover__phone--left">
+                      <div class="phone-frame">
+                        <div class="phone-frame__bezel">
+                          <div class="phone-frame__notch"></div>
+                          <div class="phone-frame__screen">
+                            <img src="assets/debitpro/p3-1-customers-list.png" alt="" class="phone-frame__shot" loading="lazy" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="proj-cover__phone proj-cover__phone--center">
+                      <div class="phone-frame">
+                        <div class="phone-frame__bezel">
+                          <div class="phone-frame__notch"></div>
+                          <div class="phone-frame__screen">
+                            <img src="assets/debitpro/dashboard.png" alt="debitPro dashboard" class="phone-frame__shot" loading="lazy" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="proj-cover__phone proj-cover__phone--right">
+                      <div class="phone-frame">
+                        <div class="phone-frame__bezel">
+                          <div class="phone-frame__notch"></div>
+                          <div class="phone-frame__screen">
+                            <img src="assets/debitpro/p4-4-track-installments.png" alt="" class="phone-frame__shot" loading="lazy" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proj-cover__corner">
+                    <span class="proj-cover__type-label">Mobile</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__meta">
+                <div class="project-card__header">
+                  <span class="project-card__category" data-i18n="dp.category">FinOps · Mobile</span>
+                  <span class="project-card__year">2025</span>
+                </div>
+                <h3 class="project-card__title" data-i18n="dp.name">debitPro</h3>
+                <p class="project-card__tagline" data-i18n="dp.tagline">An installment-office app without the notebook.
+                </p>
+                <div class="project-card__chips">
+                  <span class="tech-chip">Flutter</span>
+                  <span class="tech-chip">Firebase</span>
+                  <span class="tech-chip">Firestore</span>
+                  <span class="tech-chip">BLoC / Cubit</span>
+                </div>
+                <a href="project-mobile.html" class="project-card__cta">
+                  <span data-i18n="work.view">View case study</span>
+                  <span data-arrow></span>
+                </a>
+              </div>
+            </article>
+          </div>
+
           <!-- Card: CHR Developments -->
           <div class="anim-reveal anim-reveal--delay-80">
             <article class="project-card">
-              <div class="project-card__index">01</div>
+              <div class="project-card__index">03</div>
               <div class="project-card__cover">
                 <div class="proj-cover proj-cover--web proj-cover--chr">
                   <div class="proj-cover__bg"></div>
@@ -202,15 +333,16 @@
               <div class="project-card__meta">
                 <div class="project-card__header">
                   <span class="project-card__category" data-i18n="chr.category">Real Estate Platform</span>
-                  <span class="project-card__year">2024</span>
+                  <span class="project-card__year">Mars 2026</span>
                 </div>
                 <h3 class="project-card__title" data-i18n="chr.name">CHR Developments</h3>
-                <p class="project-card__tagline" data-i18n="chr.tagline">A digital showroom for a real estate developer.</p>
+                <p class="project-card__tagline" data-i18n="chr.tagline">A digital showroom for a real estate developer.
+                </p>
                 <div class="project-card__chips">
-                  <span class="tech-chip">Next.js</span>
-                  <span class="tech-chip">TypeScript</span>
+                  <span class="tech-chip">Laravel</span>
+                  <span class="tech-chip">Blade</span>
+                  <span class="tech-chip">MySQL</span>
                   <span class="tech-chip">Tailwind</span>
-                  <span class="tech-chip">Prisma</span>
                   <span class="tech-chip tech-chip--more">+2</span>
                 </div>
                 <a href="project-web.html" class="project-card__cta">
@@ -221,20 +353,57 @@
             </article>
           </div>
 
-          <!-- Card: debitPro -->
-          <div class="anim-reveal anim-reveal--delay-140">
+          <!-- Card: EUX -->
+          <div class="anim-reveal anim-reveal--delay-200">
             <article class="project-card">
-              <div class="project-card__index">02</div>
+              <div class="project-card__index">04</div>
               <div class="project-card__cover">
-                <div class="proj-cover proj-cover--shots proj-cover--debitpro">
+                <div class="proj-cover proj-cover--shots proj-cover--eux">
                   <div class="proj-cover__bg"></div>
                   <div class="proj-cover__grid"></div>
-                  <div class="proj-cover__phone-wrap">
-                    <div class="phone-frame phone-frame--card">
-                      <div class="phone-frame__bezel">
-                        <div class="phone-frame__notch"></div>
-                        <div class="phone-frame__screen">
-                          <img src="assets/debitpro/dashboard.png" alt="debitPro dashboard" class="phone-frame__shot" loading="lazy" />
+                  <div class="proj-cover__phones">
+                    <div class="proj-cover__phone proj-cover__phone--left">
+                      <div class="phone-frame">
+                        <div class="phone-frame__bezel">
+                          <div class="phone-frame__notch"></div>
+                          <div class="phone-frame__screen">
+                            <div class="media-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <circle cx="8.5" cy="8.5" r="1.6" />
+                                <path d="M21 15l-5-5L5 21" />
+                              </svg><span class="media-ph__label">Image soon</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="proj-cover__phone proj-cover__phone--center">
+                      <div class="phone-frame">
+                        <div class="phone-frame__bezel">
+                          <div class="phone-frame__notch"></div>
+                          <div class="phone-frame__screen">
+                            <div class="media-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <circle cx="8.5" cy="8.5" r="1.6" />
+                                <path d="M21 15l-5-5L5 21" />
+                              </svg><span class="media-ph__label">Image soon</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="proj-cover__phone proj-cover__phone--right">
+                      <div class="phone-frame">
+                        <div class="phone-frame__bezel">
+                          <div class="phone-frame__notch"></div>
+                          <div class="phone-frame__screen">
+                            <div class="media-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <circle cx="8.5" cy="8.5" r="1.6" />
+                                <path d="M21 15l-5-5L5 21" />
+                              </svg><span class="media-ph__label">Image soon</span></div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -246,18 +415,101 @@
               </div>
               <div class="project-card__meta">
                 <div class="project-card__header">
-                  <span class="project-card__category" data-i18n="dp.category">FinOps · Mobile</span>
-                  <span class="project-card__year">2025</span>
+                  <span class="project-card__category" data-i18n="eux.category">Logistics · Mobile</span>
+                  <span class="project-card__year">Jan 2026</span>
                 </div>
-                <h3 class="project-card__title" data-i18n="dp.name">debitPro</h3>
-                <p class="project-card__tagline" data-i18n="dp.tagline">An installment-office app without the notebook.</p>
+                <h3 class="project-card__title" data-i18n="eux.name">EUX Client App</h3>
+                <p class="project-card__tagline" data-i18n="eux.tagline">An Arabic-first shipping app with live J&amp;T
+                  Express tracking.</p>
                 <div class="project-card__chips">
-                  <span class="tech-chip">React Native</span>
-                  <span class="tech-chip">Expo</span>
+                  <span class="tech-chip">Flutter</span>
+                  <span class="tech-chip">Firebase</span>
+                  <span class="tech-chip">Firestore</span>
+                  <span class="tech-chip">J&amp;T API</span>
+                </div>
+                <a href="project-eux.html" class="project-card__cta">
+                  <span data-i18n="work.view">View case study</span>
+                  <span data-arrow></span>
+                </a>
+              </div>
+            </article>
+          </div>
+          
+          <!-- Card: Cashes -->
+          <div class="anim-reveal anim-reveal--delay-200">
+            <article class="project-card">
+              <div class="project-card__index">05</div>
+              <div class="project-card__cover">
+                <div class="proj-cover proj-cover--shots proj-cover--cashes">
+                  <div class="proj-cover__bg"></div>
+                  <div class="proj-cover__grid"></div>
+                  <div class="proj-cover__phones">
+                    <div class="proj-cover__phone proj-cover__phone--left">
+                      <div class="phone-frame">
+                        <div class="phone-frame__bezel">
+                          <div class="phone-frame__notch"></div>
+                          <div class="phone-frame__screen">
+                            <div class="media-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <circle cx="8.5" cy="8.5" r="1.6" />
+                                <path d="M21 15l-5-5L5 21" />
+                              </svg><span class="media-ph__label">Image soon</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="proj-cover__phone proj-cover__phone--center">
+                      <div class="phone-frame">
+                        <div class="phone-frame__bezel">
+                          <div class="phone-frame__notch"></div>
+                          <div class="phone-frame__screen">
+                            <div class="media-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <circle cx="8.5" cy="8.5" r="1.6" />
+                                <path d="M21 15l-5-5L5 21" />
+                              </svg><span class="media-ph__label">Image soon</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="proj-cover__phone proj-cover__phone--right">
+                      <div class="phone-frame">
+                        <div class="phone-frame__bezel">
+                          <div class="phone-frame__notch"></div>
+                          <div class="phone-frame__screen">
+                            <div class="media-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <circle cx="8.5" cy="8.5" r="1.6" />
+                                <path d="M21 15l-5-5L5 21" />
+                              </svg><span class="media-ph__label">Image soon</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proj-cover__corner">
+                    <span class="proj-cover__type-label">Mobile</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__meta">
+                <div class="project-card__header">
+                  <span class="project-card__category" data-i18n="cashes.category">Construction SaaS · Mobile</span>
+                  <span class="project-card__year">Nov 2024</span>
+                </div>
+                <h3 class="project-card__title" data-i18n="cashes.name">Cashes</h3>
+                <p class="project-card__tagline" data-i18n="cashes.tagline">A multi-tenant cash &amp; invoicing app for
+                  finishing companies.</p>
+                <div class="project-card__chips">
+                  <span class="tech-chip">Flutter</span>
                   <span class="tech-chip">Supabase</span>
                   <span class="tech-chip">PostgreSQL</span>
+                  <span class="tech-chip">Cubit</span>
                 </div>
-                <a href="project-mobile.html" class="project-card__cta">
+                <a href="project-cashes.html" class="project-card__cta">
                   <span data-i18n="work.view">View case study</span>
                   <span data-arrow></span>
                 </a>
@@ -288,7 +540,8 @@
               <div class="process-section__num">01</div>
               <div class="process-section__content">
                 <h3 class="process-section__step-title" data-i18n="process.01.title">Discovery</h3>
-                <p class="process-section__step-body" data-i18n="process.01.body">I sit with you and watch how the work actually happens today.</p>
+                <p class="process-section__step-body" data-i18n="process.01.body">I sit with you and watch how the work
+                  actually happens today.</p>
               </div>
             </div>
           </div>
@@ -297,7 +550,8 @@
               <div class="process-section__num">02</div>
               <div class="process-section__content">
                 <h3 class="process-section__step-title" data-i18n="process.02.title">Shape</h3>
-                <p class="process-section__step-body" data-i18n="process.02.body">I write the problem back to you in plain language, then sketch the smallest system.</p>
+                <p class="process-section__step-body" data-i18n="process.02.body">I write the problem back to you in
+                  plain language, then sketch the smallest system.</p>
               </div>
             </div>
           </div>
@@ -306,7 +560,8 @@
               <div class="process-section__num">03</div>
               <div class="process-section__content">
                 <h3 class="process-section__step-title" data-i18n="process.03.title">Build</h3>
-                <p class="process-section__step-body" data-i18n="process.03.body">I ship in tight loops. You see something working every week.</p>
+                <p class="process-section__step-body" data-i18n="process.03.body">I ship in tight loops. You see
+                  something working every week.</p>
               </div>
             </div>
           </div>
@@ -315,7 +570,8 @@
               <div class="process-section__num">04</div>
               <div class="process-section__content">
                 <h3 class="process-section__step-title" data-i18n="process.04.title">Deliver</h3>
-                <p class="process-section__step-body" data-i18n="process.04.body">Deploy, document, train your team, and stay on call.</p>
+                <p class="process-section__step-body" data-i18n="process.04.body">Deploy, document, train your team, and
+                  stay on call.</p>
               </div>
             </div>
           </div>
@@ -337,46 +593,47 @@
           <h2 class="text-display-2" data-i18n="stack.h2">Tools I reach for.</h2>
         </div>
         <div class="anim-reveal anim-reveal--delay-100">
-          <p class="text-section-sub" data-i18n="stack.subtitle">I'm tool-agnostic — but these are what I'm fastest and sharpest with.</p>
+          <p class="text-section-sub" data-i18n="stack.subtitle">I'm tool-agnostic — but these are what I'm fastest and
+            sharpest with.</p>
         </div>
         <div class="stack-section__grid">
           <div class="anim-reveal stack-section__group anim-reveal--delay-140">
             <h3 class="stack-section__group-label" data-i18n="stack.frontend">Frontend</h3>
             <ul class="stack-section__items">
-              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Next.js</li>
-              <li class="stack-section__item"><span class="stack-section__item-dot"></span>React</li>
-              <li class="stack-section__item"><span class="stack-section__item-dot"></span>React Native</li>
-              <li class="stack-section__item"><span class="stack-section__item-dot"></span>TypeScript</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>HTML & CSS</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Javascript</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Bootstrap</li>
               <li class="stack-section__item"><span class="stack-section__item-dot"></span>Tailwind CSS</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Sass</li>
             </ul>
           </div>
           <div class="anim-reveal stack-section__group anim-reveal--delay-200">
             <h3 class="stack-section__group-label" data-i18n="stack.backend">Backend</h3>
             <ul class="stack-section__items">
-              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Node.js</li>
-              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Express</li>
-              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Nest.js</li>
               <li class="stack-section__item"><span class="stack-section__item-dot"></span>Laravel</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>PHP</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>PostgreSQL</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>MySQL</li>
               <li class="stack-section__item"><span class="stack-section__item-dot"></span>REST / GraphQL</li>
             </ul>
           </div>
           <div class="anim-reveal stack-section__group anim-reveal--delay-260">
-            <h3 class="stack-section__group-label" data-i18n="stack.data">Data &amp; Infra</h3>
+            <h3 class="stack-section__group-label" data-i18n="stack.data">Mobile</h3>
             <ul class="stack-section__items">
-              <li class="stack-section__item"><span class="stack-section__item-dot"></span>PostgreSQL</li>
-              <li class="stack-section__item"><span class="stack-section__item-dot"></span>MySQL</li>
-              <li class="stack-section__item"><span class="stack-section__item-dot"></span>MongoDB</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Flutter</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Dart</li>
               <li class="stack-section__item"><span class="stack-section__item-dot"></span>Supabase</li>
-              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Prisma</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Firebase / Firestore</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Clean Architecture</li>
             </ul>
           </div>
           <div class="anim-reveal stack-section__group anim-reveal--delay-320">
             <h3 class="stack-section__group-label" data-i18n="stack.int">Integrations</h3>
             <ul class="stack-section__items">
               <li class="stack-section__item"><span class="stack-section__item-dot"></span>Stripe</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Paypal</li>
+              <li class="stack-section__item"><span class="stack-section__item-dot"></span>J&amp;T Express API</li>
               <li class="stack-section__item"><span class="stack-section__item-dot"></span>Google APIs</li>
-              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Mapbox</li>
-              <li class="stack-section__item"><span class="stack-section__item-dot"></span>Cloudinary</li>
               <li class="stack-section__item"><span class="stack-section__item-dot"></span>Resend</li>
             </ul>
           </div>
@@ -401,7 +658,8 @@
           <div class="testimonials-section__grid">
             <div class="testimonial-card">
               <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
-              <p class="testimonial-card__quote" data-i18n="testi.q1">Muhammed didn't just deliver an app — he understood our business better than some of our own staff.</p>
+              <p class="testimonial-card__quote" data-i18n="testi.q1">Muhammed didn't just deliver an app — he
+                understood our business better than some of our own staff.</p>
               <div class="testimonial-card__person">
                 <span class="testimonial-card__name">Ahmed M.</span>
                 <span class="testimonial-card__role" data-i18n="testi.q1.role">Owner, Finishing Works Co.</span>
@@ -409,7 +667,8 @@
             </div>
             <div class="testimonial-card">
               <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
-              <p class="testimonial-card__quote" data-i18n="testi.q2">He pushed back when we asked for the wrong thing, and pushed harder when we asked for the right thing. That's rare.</p>
+              <p class="testimonial-card__quote" data-i18n="testi.q2">He pushed back when we asked for the wrong thing,
+                and pushed harder when we asked for the right thing. That's rare.</p>
               <div class="testimonial-card__person">
                 <span class="testimonial-card__name">Sara F.</span>
                 <span class="testimonial-card__role" data-i18n="testi.q2.role">Product Lead, EdTech</span>
@@ -417,7 +676,8 @@
             </div>
             <div class="testimonial-card">
               <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
-              <p class="testimonial-card__quote" data-i18n="testi.q3">Our installment office runs on his app now. Three months in, zero late payments missed.</p>
+              <p class="testimonial-card__quote" data-i18n="testi.q3">Our installment office runs on his app now. Three
+                months in, zero late payments missed.</p>
               <div class="testimonial-card__person">
                 <span class="testimonial-card__name">Khaled R.</span>
                 <span class="testimonial-card__role" data-i18n="testi.q3.role">Installment Office</span>
@@ -444,19 +704,25 @@
           </div>
           <div class="anim-reveal anim-reveal--delay-120">
             <div class="contact-section__right">
-              <p class="contact-section__body" data-i18n="contact.body">Tell me about it. Whether it's a half-built idea, a Google Sheet that grew teeth, or a real product — I'll reply within 24 hours.</p>
+              <p class="contact-section__body" data-i18n="contact.body">Tell me about it. Whether it's a half-built
+                idea, a Google Sheet that grew teeth, or a real product — I'll reply within 24 hours.</p>
               <div class="contact-section__actions">
-                <a href="/cdn-cgi/l/email-protection#ddb0a8b5bcb0b0b8b9bcaeb5afbcbbaebcb1b8b59dbab0bcb4b1f3beb2b0" class="btn btn--primary btn--lg">
+                <a href="mailto:muhammedashrafsaleh@gmail.com" class="btn btn--primary btn--lg">
                   <span data-i18n="contact.email.btn">Email me</span>
                   <span data-arrow></span>
                 </a>
-                <a href="https://www.linkedin.com/in/muhammedashrafsaleh/" target="_blank" rel="noreferrer" class="btn btn--ghost btn--lg">
+                <a href="https://www.linkedin.com/in/muhammedashrafsaleh/" target="_blank" rel="noreferrer"
+                  class="btn btn--ghost btn--lg">
                   <span data-i18n="contact.linkedin.btn">LinkedIn</span>
+                </a>
+                <a href="https://wa.me/201500060828" target="_blank" rel="noreferrer" class="btn btn--ghost btn--lg">
+                  <span data-i18n="contact.whatsapp.btn">WhatsApp</span>
                 </a>
               </div>
               <button class="contact-section__email-copy" data-action="copy-email">
                 <span class="contact-section__email-label" data-i18n="contact.copy.label">Or copy email</span>
-                <span class="contact-section__email-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="365b435e575b5b535257455e44575045575a535e76515b575f5a1855595b">[email&#160;protected]</a></span>
+                <span class="contact-section__email-value"><a
+                    href="mailto:muhammedashrafsaleh@gmail.com">muhammedashrafsaleh@gmail.com</a></span>
                 <span class="contact-section__copy-feedback"></span>
               </button>
             </div>
@@ -474,7 +740,7 @@
         <span>Muhammed Ashraf</span>
       </div>
       <div class="site-footer__links">
-        <a href="/cdn-cgi/l/email-protection#127f677a737f7f777673617a60737461737e777a52757f737b7e3c717d7f">Email</a>
+        <a href="mailto:muhammedashrafsaleh@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/muhammedashrafsaleh/" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
       </div>
@@ -482,6 +748,8 @@
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="main.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>

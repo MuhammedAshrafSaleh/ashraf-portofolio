@@ -479,11 +479,13 @@
           </div>
         </div>
         <div class="anim-reveal pp-tech-stack anim-reveal--delay-60">
-          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>React Native</div>
-          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Expo</div>
-          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Supabase</div>
-          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>PostgreSQL</div>
-          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Expo Notifications</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Flutter</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Dart</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>BLoC / Cubit</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Firebase Auth</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Firestore</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>GoRouter</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>get_it</div>
         </div>
       </div>
     </section>
@@ -500,23 +502,27 @@
         <div class="pp-features">
           <div class="anim-reveal pp-feature anim-reveal--delay-60">
             <div class="pp-feature__num">01</div>
-            <div class="pp-feature__body"><p data-i18n="dp.f1">Client profiles + installment plans</p></div>
+            <div class="pp-feature__body"><p data-i18n="dp.f1">Client profiles with live payment-quality scoring</p></div>
           </div>
           <div class="anim-reveal pp-feature anim-reveal--delay-100">
             <div class="pp-feature__num">02</div>
-            <div class="pp-feature__body"><p data-i18n="dp.f2">Automated monthly schedule generation</p></div>
+            <div class="pp-feature__body"><p data-i18n="dp.f2">Automated monthly schedules + one-time grace-period loans</p></div>
           </div>
           <div class="anim-reveal pp-feature anim-reveal--delay-140">
             <div class="pp-feature__num">03</div>
-            <div class="pp-feature__body"><p data-i18n="dp.f3">Overdue &amp; upcoming payment alerts</p></div>
+            <div class="pp-feature__body"><p data-i18n="dp.f3">Immutable payment ledger — reversals, never deletes</p></div>
           </div>
           <div class="anim-reveal pp-feature anim-reveal--delay-180">
             <div class="pp-feature__num">04</div>
-            <div class="pp-feature__body"><p data-i18n="dp.f4">Receipt printing (Bluetooth)</p></div>
+            <div class="pp-feature__body"><p data-i18n="dp.f4">PDF exports: accounts, current-dues, overdue &amp; payments</p></div>
           </div>
           <div class="anim-reveal pp-feature anim-reveal--delay-220">
             <div class="pp-feature__num">05</div>
-            <div class="pp-feature__body"><p data-i18n="dp.f5">Owner financial dashboard</p></div>
+            <div class="pp-feature__body"><p data-i18n="dp.f5">Owner dashboard: collections, active dues, recent transactions</p></div>
+          </div>
+          <div class="anim-reveal pp-feature anim-reveal--delay-220">
+            <div class="pp-feature__num">06</div>
+            <div class="pp-feature__body"><p data-i18n="dp.f6">Offline-aware, atomic Firestore writes — no partial states</p></div>
           </div>
         </div>
       </div>
@@ -539,6 +545,13 @@
               <p class="pp-challenge__body" data-i18n="dp.c1.body">Edge cases everywhere — early payment, partial payment, plan renegotiation.</p>
             </div>
           </div>
+          <div class="anim-reveal pp-challenge anim-reveal--delay-120">
+            <div class="pp-challenge__marker">02</div>
+            <div class="pp-challenge__content">
+              <h3 class="pp-challenge__title" data-i18n="dp.c2.title">An audit trail that can't lie</h3>
+              <p class="pp-challenge__body" data-i18n="dp.c2.body">Money records can't be edited after the fact. Payments are never deleted, only reversed, so every transaction stays a permanent, replayable record.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -547,13 +560,13 @@
     <section class="pp-section pp-section--next">
       <div class="page-wrap">
         <div class="anim-reveal">
-          <a href="project-web.html" class="pp-next">
+          <a href="project-cashes.html" class="pp-next">
             <div class="pp-next__label" data-i18n="pp.next">Next project</div>
             <div class="pp-next__name">
-              <span data-i18n="dp.next.name">CHR Developments</span>
+              <span data-i18n="dp.next.name">Cashes</span>
               <span data-arrow></span>
             </div>
-            <div class="pp-next__category" data-i18n="dp.next.cat">Real Estate Platform</div>
+            <div class="pp-next__category" data-i18n="dp.next.cat">Construction SaaS · Mobile</div>
           </a>
         </div>
       </div>
@@ -569,7 +582,7 @@
         <span>Muhammed Ashraf</span>
       </div>
       <div class="site-footer__links">
-        <a href="/cdn-cgi/l/email-protection#ee839b868f83838b8a8f9d869c8f889d8f828b86ae89838f8782c08d8183">Email</a>
+        <a href="mailto:muhammedashrafsaleh@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/muhammedashrafsaleh/" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
       </div>

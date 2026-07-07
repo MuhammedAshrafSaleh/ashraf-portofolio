@@ -823,6 +823,26 @@ html[dir="rtl"] .project-card__title { line-height: 1.2; }
 .project-card--hover .proj-cover--shots .proj-cover__phone-wrap .phone-frame {
   transform: scale(1.04) translateY(-4px);
 }
+.proj-cover__phones {
+  position: relative; z-index: 2;
+  width: 100%; height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(4px, 2vw, 14px);
+  padding: 10px;
+}
+.proj-cover__phones .phone-frame {
+  --phone-w: clamp(72px, 15vw, 108px);
+  --phone-h: calc(var(--phone-w) * 2.45);
+  transition: transform 360ms var(--ease-out);
+}
+.proj-cover__phone--left  { transform: rotate(-7deg) translateY(10px); }
+.proj-cover__phone--center { transform: translateY(-14px) scale(1.08); z-index: 2; }
+.proj-cover__phone--right { transform: rotate(7deg) translateY(10px); }
+.project-card--hover .proj-cover__phone--left  { transform: rotate(-4deg) translateY(2px); }
+.project-card--hover .proj-cover__phone--right { transform: rotate(4deg) translateY(2px); }
+.project-card--hover .proj-cover__phone--center { transform: translateY(-22px) scale(1.08); }
 .proj-cover__corner {
   position: absolute;
   top: 14px; inset-inline-end: 14px;
@@ -1442,6 +1462,42 @@ html[dir="rtl"] .contact-section__email-value { direction: ltr; }
 .proj-cover--debitpro,
 .proj-showcase--debitpro,
 .phases-gallery--debitpro { --cover-hue: 230; }
+.proj-cover--cashes,
+.proj-showcase--cashes,
+.phases-gallery--cashes   { --cover-hue: 45;  }
+.proj-cover--eux,
+.proj-showcase--eux,
+.phases-gallery--eux      { --cover-hue: 168; }
+.proj-cover--lms,
+.proj-showcase--lms,
+.walkthrough-frame--lms   { --cover-hue: 275; }
+
+/* ── In-frame media placeholder ("image coming soon") ─────────────────────── */
+.media-ph {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 8px;
+  padding: 10px; text-align: center;
+  background:
+    radial-gradient(circle at 50% 38%, oklch(34% 0.06 var(--cover-hue, 145) / 0.5), transparent 62%),
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.022) 0 9px, transparent 9px 18px),
+    #0b0b0b;
+  color: rgba(245,241,232,0.34);
+}
+[data-theme="light"] .media-ph {
+  background:
+    radial-gradient(circle at 50% 38%, oklch(80% 0.06 var(--cover-hue, 145) / 0.5), transparent 62%),
+    repeating-linear-gradient(45deg, rgba(10,10,10,0.03) 0 9px, transparent 9px 18px),
+    #ece7db;
+  color: rgba(10,10,10,0.4);
+}
+.media-ph svg { width: 26px; height: 26px; opacity: 0.55; }
+.media-ph__label {
+  font-family: var(--font-mono);
+  font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase;
+  line-height: 1.4;
+}
 
 /* ── Phone frame size modifier for project-card thumbnail ─────────────────── */
 .phone-frame--card { --phone-w: 140px; --phone-h: 343px; }
