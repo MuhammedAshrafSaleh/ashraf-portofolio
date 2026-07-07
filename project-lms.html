@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FegmaPlatform LMS — Muhammed Ashraf</title>
+  <meta name="description" content="Case study: FegmaPlatform LMS — Laravel learning-management platform built by Muhammed Ashraf." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script>
+    (function () {
+      var th = localStorage.getItem("ma_theme") || "dark";
+      var lg = localStorage.getItem("ma_lang")  || "en";
+      document.documentElement.setAttribute("data-theme", th);
+      if (lg === "ar") { document.documentElement.lang = "ar"; document.documentElement.dir = "rtl"; }
+    })();
+  </script>
+</head>
+<body data-page="project-web">
+
+  <!-- ── Navbar ──────────────────────────────────────────────────────────── -->
+  <nav class="navbar" id="js-navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <span class="navbar__brand-dot"></span>
+        <span class="navbar__brand-name">Muhammed Ashraf</span>
+        <span class="navbar__brand-role" data-i18n="hero.role">Full-Stack Developer</span>
+      </a>
+      <div class="navbar__links">
+        <a href="index.html#work"    class="navbar__link" data-i18n="nav.work">Work</a>
+        <a href="index.html#about"   class="navbar__link" data-i18n="nav.about">About</a>
+        <a href="index.html#process" class="navbar__link" data-i18n="nav.process">Process</a>
+        <a href="index.html#stack"   class="navbar__link" data-i18n="nav.stack">Stack</a>
+        <a href="index.html#contact" class="navbar__link" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="navbar__controls">
+        <button class="theme-switcher" data-action="toggle-theme" aria-label="Toggle theme"></button>
+        <button class="lang-switcher" data-action="toggle-lang" aria-label="Toggle language">
+          <span class="lang-switcher__option lang-switcher__option--active" data-lang="en">EN</span>
+          <span class="lang-switcher__sep">/</span>
+          <span class="lang-switcher__option" data-lang="ar">ع</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="project-page">
+
+    <!-- ── Project hero ──────────────────────────────────────────────────── -->
+    <header class="pp-hero">
+      <div class="page-wrap">
+        <a href="index.html" class="pp-hero__back">
+          <span data-back-arrow></span>
+          <span data-i18n="pp.back">Back to all work</span>
+        </a>
+
+        <div class="anim-reveal">
+          <div class="pp-hero__meta">
+            <span class="pp-hero__category" data-i18n="lms.pp.cat">E-Learning Platform · Web</span>
+            <span class="pp-hero__sep">·</span>
+            <span>2024</span>
+            <span class="pp-hero__sep">·</span>
+            <span>Web</span>
+          </div>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-60">
+          <h1 class="pp-hero__title" data-i18n="lms.pp.name">FegmaPlatform LMS</h1>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-120">
+          <p class="pp-hero__tagline" data-i18n="lms.pp.tagline">A Laravel learning-management platform with three roles — Student, Instructor, and Admin — covering course sales, video learning, certificates, instructor payouts, and a full CMS-driven marketplace.</p>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-180">
+          <div class="pp-hero__actions">
+            <a href="#" class="btn btn--primary" target="_blank" rel="noreferrer">
+              <span data-i18n="pp.live">Live demo</span>
+              <span data-arrow></span>
+            </a>
+            <a href="#" class="btn btn--ghost" target="_blank" rel="noreferrer">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 014 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              <span data-i18n="pp.source">Source</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="anim-reveal pp-hero__visual anim-reveal--delay-240">
+          <div class="pp-hero__cover">
+            <div class="proj-showcase proj-showcase--web proj-showcase--lms">
+              <div class="proj-showcase__bg"></div>
+              <div class="proj-showcase__grid"></div>
+              <div class="proj-showcase__browser-wrap">
+                <div class="browser-frame">
+                  <div class="browser-frame__bar">
+                    <div class="browser-frame__dots">
+                      <span class="browser-frame__dot"></span>
+                      <span class="browser-frame__dot"></span>
+                      <span class="browser-frame__dot"></span>
+                    </div>
+                  </div>
+                  <div class="browser-frame__viewport">
+                    <div class="media-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.6"/><path d="M21 15l-5-5L5 21"/></svg><span class="media-ph__label">Image soon</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="proj-showcase__tag">
+                <span class="proj-showcase__tag-dot"></span>
+                <span>Web</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ── Walkthrough ────────────────────────────────────────────────────── -->
+    <section class="pp-section">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="pp.walkthrough">Project walkthrough</span>
+          </div>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-60">
+          <p class="pp-section__intro" data-i18n="pp.walkthrough.sub">A short video where I walk through the problem, the system, and the key decisions.</p>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-120">
+          <div class="walkthrough-frame walkthrough-frame--lms">
+            <div class="walkthrough-frame__bg"></div>
+            <button class="walkthrough-frame__play" aria-label="Play walkthrough">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+            <div class="walkthrough-frame__caption">Video to be added · placeholder</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Problem / Solution ─────────────────────────────────────────────── -->
+    <section class="pp-section pp-section--alt">
+      <div class="page-wrap">
+        <div class="pp-overview">
+          <div class="anim-reveal pp-overview__col">
+            <div class="section-label">
+              <span class="section-label__line"></span>
+              <span class="section-label__text" data-i18n="pp.problem">The problem</span>
+            </div>
+            <p class="pp-overview__body" data-i18n="lms.problem">Selling courses online means juggling three very different users at once.</p>
+          </div>
+          <div class="anim-reveal pp-overview__col pp-overview__col--solution anim-reveal--delay-80">
+            <div class="section-label">
+              <span class="section-label__line"></span>
+              <span class="section-label__text" data-i18n="pp.solution">The solution</span>
+            </div>
+            <p class="pp-overview__body" data-i18n="lms.solution">A single Laravel platform with a separate admin guard covering students, instructors, and admins.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Tech stack ─────────────────────────────────────────────────────── -->
+    <section class="pp-section">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="pp.stack">Tech stack</span>
+          </div>
+        </div>
+        <div class="anim-reveal pp-tech-stack anim-reveal--delay-60">
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Laravel</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>MySQL</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Blade</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>DomPDF</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Stripe / PayPal / Razorpay</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Intervention Image</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Features ───────────────────────────────────────────────────────── -->
+    <section class="pp-section pp-section--alt">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="pp.features">Key features</span>
+          </div>
+        </div>
+        <div class="pp-features">
+          <div class="anim-reveal pp-feature anim-reveal--delay-60">
+            <div class="pp-feature__num">01</div>
+            <div class="pp-feature__body"><p data-i18n="lms.f1">Course catalog, cart & multi-gateway checkout (Stripe/PayPal/Razorpay)</p></div>
+          </div>
+          <div class="anim-reveal pp-feature anim-reveal--delay-100">
+            <div class="pp-feature__num">02</div>
+            <div class="pp-feature__body"><p data-i18n="lms.f2">Video player with lesson-completion tracking & resume</p></div>
+          </div>
+          <div class="anim-reveal pp-feature anim-reveal--delay-140">
+            <div class="pp-feature__num">03</div>
+            <div class="pp-feature__body"><p data-i18n="lms.f3">On-demand PDF certificates via a visual Certificate Builder</p></div>
+          </div>
+          <div class="anim-reveal pp-feature anim-reveal--delay-180">
+            <div class="pp-feature__num">04</div>
+            <div class="pp-feature__body"><p data-i18n="lms.f4">Instructor dashboard: chaptered courses, wallet & payouts</p></div>
+          </div>
+          <div class="anim-reveal pp-feature anim-reveal--delay-220">
+            <div class="pp-feature__num">05</div>
+            <div class="pp-feature__body"><p data-i18n="lms.f5">Admin approvals, manual & CSV bulk enrollment, revenue analytics</p></div>
+          </div>
+          <div class="anim-reveal pp-feature anim-reveal--delay-220">
+            <div class="pp-feature__num">06</div>
+            <div class="pp-feature__body"><p data-i18n="lms.f6">Full CMS homepage builder, blog, and custom pages</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Challenges ─────────────────────────────────────────────────────── -->
+    <section class="pp-section">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="pp.challenges">Challenges I solved</span>
+          </div>
+        </div>
+        <div class="pp-challenges">
+          <div class="anim-reveal pp-challenge anim-reveal--delay-60">
+            <div class="pp-challenge__marker">01</div>
+            <div class="pp-challenge__content">
+              <h3 class="pp-challenge__title" data-i18n="lms.c1.title">Money that has to add up</h3>
+              <p class="pp-challenge__body" data-i18n="lms.c1.body">Every sale splits a commission to the platform and credits the instructor's wallet.</p>
+            </div>
+          </div>
+          <div class="anim-reveal pp-challenge anim-reveal--delay-120">
+            <div class="pp-challenge__marker">02</div>
+            <div class="pp-challenge__content">
+              <h3 class="pp-challenge__title" data-i18n="lms.c2.title">Certificates on demand</h3>
+              <p class="pp-challenge__body" data-i18n="lms.c2.body">Certificates had to look designed, not generic.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Next project ───────────────────────────────────────────────────── -->
+    <section class="pp-section pp-section--next">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <a href="project-web.html" class="pp-next">
+            <div class="pp-next__label" data-i18n="pp.next">Next project</div>
+            <div class="pp-next__name">
+              <span data-i18n="lms.next.name">CHR Developments</span>
+              <span data-arrow></span>
+            </div>
+            <div class="pp-next__category" data-i18n="lms.next.cat">Real Estate Platform</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="page-wrap site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="navbar__brand-dot"></span>
+        <span>Muhammed Ashraf</span>
+      </div>
+      <div class="site-footer__links">
+        <a href="mailto:muhammedashrafsaleh@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/muhammedashrafsaleh/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+      <div class="site-footer__copy" data-i18n="footer.copy">Designed &amp; built by Muhammed Ashraf · 2026</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
