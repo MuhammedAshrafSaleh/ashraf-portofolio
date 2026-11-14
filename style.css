@@ -1474,6 +1474,9 @@ html[dir="rtl"] .contact-section__email-value { direction: ltr; }
 .proj-cover--dots,
 .proj-showcase--dots,
 .walkthrough-frame--dots  { --cover-hue: 48;  }
+.proj-cover--sheikhy,
+.proj-showcase--sheikhy,
+.phases-gallery--sheikhy  { --cover-hue: 155; }
 
 /* ── In-frame media placeholder ("image coming soon") ─────────────────────── */
 .media-ph {
