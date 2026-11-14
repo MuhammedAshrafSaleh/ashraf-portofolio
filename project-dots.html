@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DOTS — Muhammed Ashraf</title>
+  <meta name="description" content="Case study: DOTS — Bilingual e-commerce platform for Egyptian lighting and electrical suppliers, built by Muhammed Ashraf." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script>
+    (function () {
+      var th = localStorage.getItem("ma_theme") || "dark";
+      var lg = localStorage.getItem("ma_lang")  || "en";
+      document.documentElement.setAttribute("data-theme", th);
+      if (lg === "ar") { document.documentElement.lang = "ar"; document.documentElement.dir = "rtl"; }
+    })();
+  </script>
+</head>
+<body data-page="project-web">
+
+  <!-- ── Navbar ──────────────────────────────────────────────────────────── -->
+  <nav class="navbar" id="js-navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <span class="navbar__brand-dot"></span>
+        <span class="navbar__brand-name">Muhammed Ashraf</span>
+        <span class="navbar__brand-role" data-i18n="hero.role">Full-Stack Developer</span>
+      </a>
+      <div class="navbar__links">
+        <a href="index.html#work"    class="navbar__link" data-i18n="nav.work">Work</a>
+        <a href="index.html#about"   class="navbar__link" data-i18n="nav.about">About</a>
+        <a href="index.html#process" class="navbar__link" data-i18n="nav.process">Process</a>
+        <a href="index.html#stack"   class="navbar__link" data-i18n="nav.stack">Stack</a>
+        <a href="index.html#contact" class="navbar__link" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="navbar__controls">
+        <button class="theme-switcher" data-action="toggle-theme" aria-label="Toggle theme"></button>
+        <button class="lang-switcher" data-action="toggle-lang" aria-label="Toggle language">
+          <span class="lang-switcher__option lang-switcher__option--active" data-lang="en">EN</span>
+          <span class="lang-switcher__sep">/</span>
+          <span class="lang-switcher__option" data-lang="ar">ع</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="project-page">
+
+    <!-- ── Project hero ──────────────────────────────────────────────────── -->
+    <header class="pp-hero">
+      <div class="page-wrap">
+        <a href="index.html" class="pp-hero__back">
+          <span data-back-arrow></span>
+          <span data-i18n="pp.back">Back to all work</span>
+        </a>
+
+        <div class="anim-reveal">
+          <div class="pp-hero__meta">
+            <span class="pp-hero__category" data-i18n="dots.pp.cat">E-Commerce Platform · Web</span>
+            <span class="pp-hero__sep">·</span>
+            <span>Oct 2026</span>
+            <span class="pp-hero__sep">·</span>
+            <span>Web</span>
+          </div>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-60">
+          <h1 class="pp-hero__title" data-i18n="dots.pp.name">DOTS</h1>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-120">
+          <p class="pp-hero__tagline" data-i18n="dots.pp.tagline">A production-ready, bilingual e-commerce and catalog platform for Egyptian lighting and electrical suppliers — Arabic-first, RTL-native, with WhatsApp as the primary sales channel.</p>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-180">
+          <div class="pp-hero__actions">
+            <a href="#" class="btn btn--primary" target="_blank" rel="noreferrer">
+              <span data-i18n="pp.live">Live demo</span>
+              <span data-arrow></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="anim-reveal pp-hero__visual anim-reveal--delay-240">
+          <div class="pp-hero__cover">
+            <div class="proj-showcase proj-showcase--web proj-showcase--dots">
+              <div class="proj-showcase__bg"></div>
+              <div class="proj-showcase__grid"></div>
+              <div class="proj-showcase__browser-wrap">
+                <div class="browser-frame">
+                  <div class="browser-frame__bar">
+                    <div class="browser-frame__dots">
+                      <span class="browser-frame__dot"></span>
+                      <span class="browser-frame__dot"></span>
+                      <span class="browser-frame__dot"></span>
+                    </div>
+                  </div>
+                  <div class="browser-frame__viewport">
+                    <img src="Screens/dots/hero.png" alt="DOTS platform — hero screenshot" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+              <div class="proj-showcase__tag">
+                <span class="proj-showcase__tag-dot"></span>
+                <span>Web · AR / EN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ── Walkthrough ────────────────────────────────────────────────────── -->
+    <section class="pp-section">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="pp.walkthrough">Project walkthrough</span>
+          </div>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-60">
+          <p class="pp-section__intro" data-i18n="pp.walkthrough.sub">A short video where I walk through the problem, the system, and the key decisions.</p>
+        </div>
+        <div class="anim-reveal anim-reveal--delay-120">
+          <div class="walkthrough-frame walkthrough-frame--dots">
+            <div class="walkthrough-frame__bg"></div>
+            <button class="walkthrough-frame__play" aria-label="Play walkthrough">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+            <div class="walkthrough-frame__caption">Video to be added · placeholder</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Problem / Solution ─────────────────────────────────────────────── -->
+    <section class="pp-section pp-section--alt">
+      <div class="page-wrap">
+        <div class="pp-overview">
+          <div class="anim-reveal pp-overview__col">
+            <div class="section-label">
+              <span class="section-label__line"></span>
+              <span class="section-label__text" data-i18n="pp.problem">The problem</span>
+            </div>
+            <p class="pp-overview__body" data-i18n="dots.problem">An Egyptian lighting and electrical supplier had no digital presence: the catalog lived in WhatsApp messages and PDFs, quotes were written by hand, and payments were tracked in notebooks. International e-commerce platforms offered no RTL support, no Egyptian payment gateways, and no understanding of a market where WhatsApp is the sales floor.</p>
+          </div>
+          <div class="anim-reveal pp-overview__col pp-overview__col--solution anim-reveal--delay-80">
+            <div class="section-label">
+              <span class="section-label__line"></span>
+              <span class="section-label__text" data-i18n="pp.solution">The solution</span>
+            </div>
+            <p class="pp-overview__body" data-i18n="dots.solution">Built DOTS from scratch on Laravel 13 and Livewire 4 — a fully bilingual (AR/EN) RTL-native platform covering the full customer journey: discovery, catalog, cart, checkout, three Egyptian payment methods, order tracking, and a complete back-office, with WhatsApp woven into every step as the primary sales channel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Tech stack ─────────────────────────────────────────────────────── -->
+    <section class="pp-section">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="pp.stack">Tech stack</span>
+          </div>
+        </div>
+        <div class="anim-reveal pp-tech-stack anim-reveal--delay-60">
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Laravel 13</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Livewire 4</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Alpine.js</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>MySQL 8</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Redis</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Vite</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Paymob</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Spatie packages</div>
+          <div class="pp-tech-stack__item"><span class="pp-tech-stack__dot"></span>Pest</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Features ───────────────────────────────────────────────────────── -->
+    <section class="pp-section pp-section--alt">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="pp.features">Key features</span>
+          </div>
+        </div>
+        <div class="pp-features">
+          <div class="anim-reveal pp-feature anim-reveal--delay-60">
+            <div class="pp-feature__num">01</div>
+            <div class="pp-feature__body"><p data-i18n="dots.f1">Arabic-first, RTL-native — Arabic-script URLs, bilingual sitemap, hreflang, language switcher that keeps page context</p></div>
+          </div>
+          <div class="anim-reveal pp-feature anim-reveal--delay-100">
+            <div class="pp-feature__num">02</div>
+            <div class="pp-feature__body"><p data-i18n="dots.f2">Livewire-powered product listing — faceted filtering by category, brand, attributes, price range; 4 sort modes; grid/list toggle; shareable filter URLs</p></div>
+          </div>
+          <div class="anim-reveal pp-feature anim-reveal--delay-140">
+            <div class="pp-feature__num">03</div>
+            <div class="pp-feature__body"><p data-i18n="dots.f3">Three Egyptian payment methods: Cash on Delivery, Paymob card checkout, and InstaPay via WhatsApp — with automatic stock reservation and release</p></div>
+          </div>
+          <div class="anim-reveal pp-feature anim-reveal--delay-180">
+            <div class="pp-feature__num">04</div>
+            <div class="pp-feature__body"><p data-i18n="dots.f4">WhatsApp as a first-class channel — every click logged (source, product, cart, order), bilingual editable templates, cart quoting in one tap</p></div>
+          </div>
+          <div class="anim-reveal pp-feature anim-reveal--delay-220">
+            <div class="pp-feature__num">05</div>
+            <div class="pp-feature__body"><p data-i18n="dots.f5">Full custom admin panel — products, variants, categories, orders, customers, coupons, delivery methods, payment methods, blog, services, projects, SEO, settings</p></div>
+          </div>
+          <div class="anim-reveal pp-feature anim-reveal--delay-260">
+            <div class="pp-feature__num">06</div>
+            <div class="pp-feature__body"><p data-i18n="dots.f6">565 automated tests — unit and feature coverage for checkout, payments, coupons, delivery rules, stock, WhatsApp logging, auth, and guard separation</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Challenges ─────────────────────────────────────────────────────── -->
+    <section class="pp-section">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span class="section-label__text" data-i18n="pp.challenges">Challenges I solved</span>
+          </div>
+        </div>
+        <div class="pp-challenges">
+          <div class="anim-reveal pp-challenge anim-reveal--delay-60">
+            <div class="pp-challenge__marker">01</div>
+            <div class="pp-challenge__content">
+              <h3 class="pp-challenge__title" data-i18n="dots.c1.title">75× faster product listing</h3>
+              <p class="pp-challenge__body" data-i18n="dots.c1.body">Full-table scans on 10,000+ products brought listing pages to 15 ms. Added sort indexes to eliminate scans and Redis tag-based caching with precise invalidation on data changes — pages now respond in 0.2 ms. Zero N+1 queries enforced in development.</p>
+            </div>
+          </div>
+          <div class="anim-reveal pp-challenge anim-reveal--delay-120">
+            <div class="pp-challenge__marker">02</div>
+            <div class="pp-challenge__content">
+              <h3 class="pp-challenge__title" data-i18n="dots.c2.title">InstaPay — a payment flow with no API</h3>
+              <p class="pp-challenge__body" data-i18n="dots.c2.body">InstaPay has no developer API. Built a manual-confirmation flow: order is created and items reserved, customer is guided to send a payment screenshot on WhatsApp, staff confirms in the admin. A scheduler releases reserved stock on expired windows automatically.</p>
+            </div>
+          </div>
+          <div class="anim-reveal pp-challenge anim-reveal--delay-180">
+            <div class="pp-challenge__marker">03</div>
+            <div class="pp-challenge__content">
+              <h3 class="pp-challenge__title" data-i18n="dots.c3.title">Bilingual everything — including URLs</h3>
+              <p class="pp-challenge__body" data-i18n="dots.c3.body">Arabic isn't a translation layer — it's a first-class locale with its own slug column, its own routes, Arabic-script URLs (e.g. /ar/منتجات/اسم-المنتج), and a bilingual sitemap.xml. Every admin field has side-by-side AR/EN editors — one save updates both languages.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Next project ───────────────────────────────────────────────────── -->
+    <section class="pp-section pp-section--next">
+      <div class="page-wrap">
+        <div class="anim-reveal">
+          <a href="project-mobile.html" class="pp-next">
+            <div class="pp-next__label" data-i18n="pp.next">Next project</div>
+            <div class="pp-next__name">
+              <span data-i18n="dots.next.name">debitPro</span>
+              <span data-arrow></span>
+            </div>
+            <div class="pp-next__category" data-i18n="dots.next.cat">FinOps · Mobile</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="page-wrap site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="navbar__brand-dot"></span>
+        <span>Muhammed Ashraf</span>
+      </div>
+      <div class="site-footer__links">
+        <a href="mailto:muhammedashrafsaleh@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/muhammedashrafsaleh/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+      <div class="site-footer__copy" data-i18n="footer.copy">Designed &amp; built by Muhammed Ashraf · 2026</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

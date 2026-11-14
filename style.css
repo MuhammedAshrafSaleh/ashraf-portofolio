@@ -1471,6 +1471,9 @@ html[dir="rtl"] .contact-section__email-value { direction: ltr; }
 .proj-cover--lms,
 .proj-showcase--lms,
 .walkthrough-frame--lms   { --cover-hue: 275; }
+.proj-cover--dots,
+.proj-showcase--dots,
+.walkthrough-frame--dots  { --cover-hue: 48;  }
 
 /* ── In-frame media placeholder ("image coming soon") ─────────────────────── */
 .media-ph {
